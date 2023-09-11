@@ -30,6 +30,7 @@
         {
             this.lista = new System.Windows.Forms.ListBox();
             this.txtConsulta = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -50,14 +51,26 @@
             this.txtConsulta.Size = new System.Drawing.Size(280, 41);
             this.txtConsulta.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(754, 74);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(280, 80);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "executar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 644);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtConsulta);
             this.Controls.Add(this.lista);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -68,6 +81,7 @@
 
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.TextBox txtConsulta;
+        private System.Windows.Forms.Button button1;
     }
 }
 
