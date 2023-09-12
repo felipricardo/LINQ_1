@@ -179,14 +179,14 @@ namespace LINQ_1
             txtConsulta.Text = "";
 
             var res = from estado in lista_estados 
-                      group estado by estado.Value; // agrupamento criado
-            
+                      group estado by estado.Value; // Para cada 'estado' na coleção 'lista_estados', agrupe os estados pelo valor 'estado.Value'
+
             foreach (var grupo in res)
             {
-                lista.Items.Add(grupo.Key); // para cada grupo irá adicionar a chave do grupo ( o grupo é o País)
+                lista.Items.Add(grupo.Key); // Adiciona o nome do país
                 foreach (var estado in grupo)
                 {
-                    lista.Items.Add("     " + estado.Key); // adicionar o estado a cada grupo
+                    lista.Items.Add("     " + estado.Key); // Adiciona o nome do estado com recuo
                 }
             }
         }
