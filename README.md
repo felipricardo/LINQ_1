@@ -31,3 +31,50 @@ O código define quatro coleções de dados diferentes:
 
 ### 7. Consultas Lambda
 - O botão "btnLINQLambda" mostra o equivalente das consultas LINQ usando expressões Lambda, incluindo seleção, filtragem, ordenação e agrupamento.
+------------------------------------------------------------------------------------
+```
+Classe Form1
+    Variáveis:
+        - lista_nomes: Lista de strings
+        - lista_numeros: Lista de inteiros
+        - lista_produtos: Dicionário de strings para números decimais
+        - lista_estados: Dicionário de strings para strings
+
+    Função Construtor Form1()
+        Inicialize os controles da janela e defina os valores das variáveis
+
+    Função btnExecutar_Click()
+        Limpe a lista de itens
+        Obtenha o texto do controle de texto 'txtConsulta'
+        Execute uma consulta LINQ na lista de nomes para encontrar nomes que comecem com o texto digitado
+        Adicione os resultados à lista
+
+    Função btnWhere_Click()
+        Limpe a lista de itens
+        Converta o texto do controle 'txtConsulta' para letras minúsculas
+        Execute uma consulta LINQ na lista de nomes para encontrar nomes que contenham o texto digitado
+        Adicione os resultados à lista
+
+    Função btnOrderBy_Click()
+        Limpe a lista de itens
+        Obtenha o texto do controle de texto 'txtConsulta'
+        Execute uma consulta LINQ na lista de produtos para ordená-los pelo nome
+        Adicione os resultados à lista
+
+    Função btnGroupBy_Click()
+        Limpe a lista de itens
+        Limpe o texto do controle de texto 'txtConsulta'
+        Execute uma consulta LINQ na lista de estados para agrupá-los pelo país
+        Adicione os resultados à lista, exibindo o nome do país e os estados com recuo
+
+    Função btnAgregacao_Click()
+        Execute várias operações de agregação nas listas de nomes e números e adicione os resultados à lista
+
+    Função btnOperadoresDeElemento_Click()
+        Limpe a lista de itens
+        Execute várias operações de operadores de elemento nas listas de números e adicione os resultados à lista
+
+    Função btnLINQLambda_Click()
+        Execute consultas LINQ usando a sintaxe de lambda em vez da sintaxe de consulta e adicione os resultados à lista
+
+Fim da Classe
