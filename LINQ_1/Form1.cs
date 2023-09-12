@@ -179,11 +179,11 @@ namespace LINQ_1
             txtConsulta.Text = "";
 
             var res = from estado in lista_estados 
-                      group estado by estado.Value;
+                      group estado by estado.Value; // agrupamento criado
             
             foreach (var grupo in res)
             {
-                lista.Items.Add(grupo.Key);
+                lista.Items.Add(grupo.Key); // para cada grupo irá adicionar a chave do grupo ( o grupo é o País)
                 foreach (var estado in grupo)
                 {
                     lista.Items.Add("     " + estado.Key);
