@@ -186,7 +186,7 @@ namespace LINQ_1
                 lista.Items.Add(grupo.Key); // para cada grupo irá adicionar a chave do grupo ( o grupo é o País)
                 foreach (var estado in grupo)
                 {
-                    lista.Items.Add("     " + estado.Key);
+                    lista.Items.Add("     " + estado.Key); // adicionar o estado a cada grupo
                 }
             }
         }
