@@ -135,7 +135,7 @@ namespace LINQ_1
             string txt = txtConsulta.Text.ToLower();
 
             var res = from nome in lista_nomes 
-                      where nome.ToLower().Contains(txt) 
+                      where nome.ToLower().Contains(txt) // na lista nome, selecione o nome digitado no campo consulta
                       select nome;
 
             foreach (var n in res)
