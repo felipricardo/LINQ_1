@@ -12,7 +12,7 @@ namespace ListaConta
         tipos.	Muitas	vezes,	precisamos	 filtrá-las	de	alguma	 forma.	Por	exemplo,	 se	quisermos	pegar	todas	as
         contas	com	saldo	maior	que	2000	reais,	fazemos:*/  
       
-        var lista = new Lista<Conta>();
+        var lista = new List<Conta>();
 
         // inserimos algumas contas
         lista.Add (...);
